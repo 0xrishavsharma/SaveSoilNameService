@@ -36,7 +36,7 @@ header{
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 
@@ -92,25 +92,30 @@ header{
 .connect-wallet-button {
   background-image: linear-gradient(
     to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
+    #26bd5d 0%,
+    #119511 0%,
+    #1b9823 21%,
+    #14a43b 52%,
+    #1c8f3b 78%,
+    #0e7424 100%
   );
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
 }
 
 .mint-button {
-  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background: -webkit-linear-gradient(left, #33e133, #0e7424);
   font-size: 18px;
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  margin: 20px 10px;
+  margin: 70px 10px;
   border-radius: 20px;
   padding: 0px 2rem;
+}
+
+.switch-to-mm{
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .mint-button:disabled{
