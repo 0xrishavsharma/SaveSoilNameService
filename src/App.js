@@ -8,8 +8,11 @@ import ethLogo from './assets/ethlogo.png';
 import { networks } from './utils/networks';
 import Helmet from 'react-helmet';
 
-const TWITTER_HANDLE = '0xrishavsharma';
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const TWITTER_HANDLE_RISHAV = '0xrishavsharma';
+const TWITTER_HANDLE_BUILDSPACE = '_buildspace';
+const TWITTER_LINK_RISHAV = `https://twitter.com/${TWITTER_HANDLE_RISHAV}`;
+const TWITTER_LINK_BUILDSPACE = `https://twitter.com/${TWITTER_HANDLE_BUILDSPACE}`;
+
 // Defining the variables we'll need
 const tld = '.savesoil';
 const CONTRACT_ADDRESS = "0x2b4F4000d38Beeb2862f9412e625A8ADE4c9EAB6";
@@ -369,8 +372,14 @@ const App = () => {
 				{mints && renderMints()}
 
         		<div className="footer-container">
-					<img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-					<a className="footer-text" href={TWITTER_LINK} target="_blank" rel="noreferrer" >{`Built by ${TWITTER_HANDLE}`}</a>
+					<div className="rishav-container">
+						<img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
+						<a className="footer-text" href={TWITTER_LINK_RISHAV} target="_blank" rel="noreferrer" >{`Built by ${TWITTER_HANDLE_RISHAV}`}</a>
+					</div>
+					<div className="buildspace-container">
+						{/* <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} /> */}
+						<a className="footer-text" href={TWITTER_LINK_BUILDSPACE} target="_blank" rel="noreferrer" >{`By learning from ${TWITTER_HANDLE_BUILDSPACE}`}</a>
+					</div>
 				</div>
 			</div>
 		</div>
