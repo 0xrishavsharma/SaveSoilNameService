@@ -9,6 +9,7 @@ import { networks } from './utils/networks';
 import Helmet from 'react-helmet';
 
 const TWITTER_HANDLE_RISHAV = '0xrishavsharma';
+const RISHAV_SHARMA = "Rishav Sharma"
 const TWITTER_HANDLE_BUILDSPACE = '_buildspace';
 const TWITTER_LINK_RISHAV = `https://twitter.com/${TWITTER_HANDLE_RISHAV}`;
 const TWITTER_LINK_BUILDSPACE = `https://twitter.com/${TWITTER_HANDLE_BUILDSPACE}`;
@@ -374,10 +375,7 @@ const App = () => {
         		<div className="footer-container">
 					<div className="rishav-container">
 						<img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-						<a className="footer-text" href={TWITTER_LINK_RISHAV} target="_blank" rel="noreferrer" style="textDecoratoion: none" >{`Built by ${TWITTER_HANDLE_RISHAV}`}</a>
-					</div>
-					<div className="buildspace-container">
-						{/* <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} /> */}
+						<a className="footer-text" href={TWITTER_LINK_RISHAV} target="_blank" rel="noreferrer" style={{ textDecoration: "none"}}>{`Built by ${RISHAV_SHARMA}`}</a>
 					</div>
 				</div>
 			</div>
