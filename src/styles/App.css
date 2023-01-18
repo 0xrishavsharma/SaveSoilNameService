@@ -1,27 +1,27 @@
 .App {
   height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   text-align: center;
   color: white;
 }
 
 p {
-  margin:0;
+  margin: 0;
 }
 
 .container {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100%;
 }
 
 .header-container {
   padding-top: 30px;
 }
 
-header{
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,20 +38,21 @@ header{
 .subtitle {
   font-size: 20px;
   color: white;
+  margin-top: 3rem;
 }
 
-.left{
+.left {
   text-align: left;
   margin-left: 10%;
 }
 
-.logo{
+.logo {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-.right{
+.right {
   display: flex;
   background: black;
   border-radius: 16px;
@@ -108,29 +109,29 @@ header{
   font-size: 18px;
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  margin: 70px 10px;
+  margin: 20px 10px;
   border-radius: 20px;
   padding: 0px 3rem;
 }
 
-.switch-to-mm{
+.switch-to-mm {
   font-size: 20px;
   font-weight: 800;
 }
 
-.mint-button:disabled{
+.mint-button:disabled {
   background: #550072;
   color: rgb(209, 209, 209);
   cursor: not-allowed;
 }
 
-.mint-row{
+.mint-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.edit-button{
+.edit-button {
   border-radius: 50%;
   cursor: pointer;
   margin-left: 3px;
@@ -140,20 +141,20 @@ header{
   background-color: transparent;
 }
 
-.edit-icon{
+.edit-icon {
   width: 12px;
 }
 
-
-.form-container{
+.form-container {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
-input{
+input {
   border: 0;
   border-radius: 12px;
   background-color: black;
@@ -175,14 +176,13 @@ input:focus {
   outline: none;
 }
 
-.first-row{
+.first-row {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-
 }
 
 .tld {
@@ -192,7 +192,7 @@ input:focus {
   color: white;
   /* left: -70px; */
   right: 22px;
-  margin: 0;  
+  margin: 0;
   padding: 0;
   margin-bottom: 13px;
 }
@@ -235,16 +235,16 @@ input:focus {
   background-color: lightgreen;
 }
 
-.link{
+.link {
   color: black;
   text-decoration: none;
 }
 
-.underlined{
+.underlined {
   text-decoration: underline;
 }
 
-.underlined:hover{
+.underlined:hover {
   cursor: pointer;
 }
 
@@ -283,8 +283,6 @@ input:focus {
   }
 }
 
-
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -298,18 +296,19 @@ input:focus {
   width: 35px;
   height: 35px;
 }
-.rishav-container, .buildspace-container{
+.rishav-container,
+.buildspace-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer-text , .buildspace-foo{
+.footer-text,
+.buildspace-foo {
   color: white;
   font-size: 16px;
   font-weight: bold;
 }
-
 
 /* Media Querries */
 @media screen and (max-width: 580px) {
@@ -333,8 +332,8 @@ input:focus {
   }
 }
 
-@media  screen and (max-width: 880px) {
-  .header{
+@media screen and (max-width: 880px) {
+  .header {
     row-gap: 3rem;
   }
   .title {
@@ -361,7 +360,7 @@ input:focus {
     border: 0;
     border-radius: 12px;
     background-color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
     /* letter-spacing: 1px; */
     font-size: 16px;
@@ -407,6 +406,4 @@ input:focus {
     width: 28px;
     height: 28px;
   }
-
-
 }
